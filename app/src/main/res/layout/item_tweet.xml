@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/img_user"
+        android:layout_width="88dp"
+        android:layout_height="88dp"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_main_info"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_toEndOf="@+id/img_user">
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            tools:text="John Snow"/>
+
+
+        <TextView
+            android:id="@+id/tv_tweet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_username"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:padding="8dp"
+            android:paddingStart="8dp"
+            tools:text="This is a very long description. This is a very long description. This is a very long description. This is a very long description"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_status_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/layout_main_info"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:id="@+id/tv_retweet_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:layout_toStartOf="@+id/ic_retweets"
+            android:textStyle="bold"
+            tools:text="14"/>
+
+        <ImageView
+            android:id="@+id/ic_retweets"
+            android:layout_width="@dimen/status_icon_dim"
+            android:layout_height="@dimen/status_icon_dim"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_toStartOf="@+id/tv_likes_count"
+            android:src="@drawable/ic_retweets"/>
+
+        <TextView
+            android:id="@+id/tv_likes_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:layout_toStartOf="@+id/ic_likes"
+            android:textStyle="bold"
+            tools:text="4"/>
+
+        <ImageView
+            android:id="@+id/ic_likes"
+            android:layout_width="@dimen/status_icon_dim"
+            android:layout_height="@dimen/status_icon_dim"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="4dp"
+            android:src="@drawable/ic_likes"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BVTwitterClient</string>
+    <string name="connected_to_network">Connected to network</string>
+    <string name="connected_to_stream">Connected to stream</string>
+    <string name="disconnected_from_network">Disconnected from network</string>
+    <string name="disconnected_from_stream">Disconnected from stream</string>
+    <string name="empty_search_bar_message">Type a keyword</string>
+    <string name="loading">Loading</string>
+    <string name="no_network_connection">No network connection</string>
+    <string name="type_a_keyword">Type a keyword</string>
+</resources>
